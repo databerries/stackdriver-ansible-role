@@ -14,7 +14,7 @@
 ---
 - name: "[Debian] Enable the Stackdriver apt repository."
   apt_repository:
-    repo: "deb {{ stackdriver_package_repo }} google-cloud-monitoring-{{ ansible_lsb.codename }} main"
+    repo: "deb {{ stackdriver_package_repo }} google-cloud-monitoring-{{ ansible_lsb.codename }}-all main"
     state: present
 
 - name: "[Debian] Ensure Stackdriver's GPG key is available."
